@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <header class="signup-header">
+                <h1>Signup</h1>
+            </header>
+            <main class="signup-body">
+                <form action="#">
+                    <p>
+                        <label for="name">Full Name :</label>
+                        <input type="text" id="name" required placeholder="Enter your full name">
+                        <i class='bx '></i>
+                        <span id="nameError"></span>
+                        <!-- <input type="text" id="name" required pattern="/^[A-Za-z]*\s{1}[A-Za-z]*$/" placeholder="Enter your full name">   for form validation in html -->
+
+                    </p>
+                    <p>
+                        <label for="email">Email :</label>
+                        <input type="email" required id="email" placeholder="abc@gmail.com">
+                        <i class='bx '></i>
+                        <span id="emailError"></span>
+                    </p>
+                    <p>
+                        <label for="password">Password :</label>
+                        <input type="password" required id="password" placeholder="Minimum 8 characters">
+                        <i class='bx '></i>
+                        <span id="passError"></span>
+
+                    </p>
+
+                    <p>
+                        <input type="submit" value="Create Account" id="submitBtn">
+                    </p>
+                </form>
+            </main>
+            <footer class="signup-footer">
+                <p>Already have an account? <a href="#">Login</a></p>
+            </footer>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
